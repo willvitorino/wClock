@@ -5,8 +5,16 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 500,
     height: 200,
-    frame: false,
+    frame: true,
+    title: "wClock",
+    transparent: true,
+    fullscreen: false,
+    maximizable: false,
+    minimizable: false,
+    autoHideMenuBar: true,
     resizable: false,
+    alwaysOnTop: true,
+    center: false,
     webPreferences: {
       nodeIntegration: true
     }
@@ -14,7 +22,7 @@ function createWindow () {
 
   // and load the index.html of the app.
   win.loadFile('src/index.html')
-  win.setMenuBarVisibility(true)
+  // win.setMenuBarVisibility(true)
 
   // Open the DevTools.
   // win.webContents.openDevTools()
