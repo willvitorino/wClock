@@ -1,2 +1,2 @@
 # wClock
-Relógio simples feito com Electron puro.
+Relógio para desktop simples feito com VueJS e Electron.
